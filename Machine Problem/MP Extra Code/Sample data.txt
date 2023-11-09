@@ -1,0 +1,14 @@
+INSERT INTO Cust_Info VALUES
+
+(1,'Patrick','Mediodia','V','Malayan Colleges Laguna','Block 31 Lot 32 Phase 1 San Lorenzo','Sta. Rosa','Laguna','Philippines','4026','2001-02-22','Male','Single','Catholic','023233432'),
+
+(2,'Noel','Mediodia','V','Infineon Technoologies','Block 31 Lot 32 Phase 1 San Lorenzo','Sta. Rosa','Laguna','Philippines','4026','1971-01-16','Male','Married','Catholic','568794078'),
+
+(3,'Ding','Laraya','L','Malayan Colleges Laguna','Tamarind Village','Sto. Tomas','Batangas','Philippines','4234','1973-12-17','Female','Single','Christian','234356759'),
+
+
+(4,'Andrea','Mediodia','V','DHL Supply Chain','Block 31 Lot 32','Sta. Rosa','Laguna','Philippines','4026', NULL,'Female','Single','Christian','123764569'),
+
+(5,'Elisha Grace','Ilao','L','Ilao Recording Company','Tamarind Village','Sto. Tomas','Batangas','Philippines','1421','1972-12-17','Female','Single','Christian','235357896'),
+
+(6,'Lamelo','Ball','L','Charlotte Hornets','333 E Trade St','Charlotte','NC 28202','United States','3131','2001-08-23','Male','Single','Evangelist','467597659')

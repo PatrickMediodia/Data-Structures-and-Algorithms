@@ -1,0 +1,29 @@
+create database Malayan;
+
+use Malayan;
+
+create table Grade (
+	Studnum nvarchar(10) not null,
+	Studlast nvarchar(40) not null,
+	Studfirst nvarchar(40) not null,
+	StudCors nvarchar(1) not null, 
+		CHECK (StudCors in ('A','B','C','D','E')),
+	StudGender nvarchar(1) not null,
+		CHECK (StudGender in ('M','F')),
+	Prelim tinyint,
+		CHECK (Prelim >=0 and Prelim <=100),
+	Midterm tinyint,
+		CHECK (Midterm >=0 and Midterm <=100),
+	Final tinyint,
+		CHECK (Final >=0 and Final <=100),
+	PRIMARY KEY (StudNum)
+);
+
+create table Payment (
+	Studnum nvarchar(10) not null,
+	Balance money,
+	Net_Tuition_Fee money
+	FOREIGN KEY (Studnum) references Grade(Studnum) 
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+);

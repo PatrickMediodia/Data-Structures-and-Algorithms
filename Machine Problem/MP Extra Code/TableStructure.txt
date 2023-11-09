@@ -1,0 +1,53 @@
+Student {
+	stud_ID PK
+	first
+	last
+	middle	
+	(add more)
+}
+
+Guardian {
+	guardian_ID PK
+	first
+	last
+	(add more)
+}
+
+Student_Guardian {
+	stud_guardian_ID PK
+	stud_ID FK
+	guardian_ID FK
+}
+
+
+Account {
+	account_ID
+	username
+	password
+	email
+	role (Admin, Super Admin, Registrar, Teacher)
+}
+
+Enrolled {
+	enroll_ID PK
+	stud_ID PK FK
+	Date_Enrolled
+	School_Year
+	Payment_ID FK
+}
+
+Payment {
+	payment_ID PK
+	stud_ID PK FK
+	payment_
+}
+
+Enrollment_Queue {
+	enroll_queue_ID PK
+	stud_ID PK FK
+	Date_Enrolled
+	enrollment_status
+}
+
+
+
